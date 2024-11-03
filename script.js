@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         cookieBanner.style.display = 'none'; // Nasconde il banner se i cookie sono già accettati
     }
+
+
+    // cambiare id di tutti i bottoni in btn e poi su getElemntById cambiare l'id con "btn" così il sound va per tutti i bottoni
+    acceptCookiesButton.addEventListener('click', function() {
+      const audio = new Audio('Sounds/sfx_click.wav'); 
+      audio.play();
+   });
     
   
     // Gestione del click sul pulsante di accettazione
