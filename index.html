@@ -12,11 +12,12 @@
         Our website uses cookies to make your experience the best, also
         <a href="privacy-policy.html" target="_blank">read our privacy policy</a>.
         <button id="accept-cookies" class="accept-button">Accept</button>
+        
       </p>
     </div>
    <div class="center-container">
       <img src="glueylayoutpr.png" width="100px" height="30px" class="glueylayout">
-      <a href="index.html" style=text-align: right"; class="home">Home</a>
+      <a href="index.html" style=text-align:right"; class="home">Home</a>
       <a href="about-us" style="text-align: right"; class="about">About</a>
       <a href="contact" style="text-align: right;" class="contact">Contact</a>
       <a href="forum" style="text-align: right" class="forum">Forum</a>
@@ -29,6 +30,17 @@
    <h2 style="text-align: center;">GAMES</h2>
    <h4 style="text-align: center;">Here we have all the current gluey available games</h4>
 
-   <script src="script.js"></script>
+   <audio id="background-music" src="/Sounds/gluey site.mp3" autoplay loop></audio>
+   
+
+
+   <script type="text/javascript">
+      // cambiare id di tutti i bottoni in btn e poi su getElemntById cambiare l'id con "btn" così il sound va per tutti i bottoni
+      document.getElementById('accept-cookies').addEventListener('click', function() {
+         const audio = new Audio('/Sounds/sfx_click.wav'); 
+         audio.play();
+      });
+   </script>
+    
 </body>
 </html>

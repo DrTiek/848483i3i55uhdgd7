@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
       cookieBanner.style.display = 'none';
     });
   });
+
+  //sono altamente skibidi!1111!!!
+
+  document.getElementById('background-music').volume = 0.5;
