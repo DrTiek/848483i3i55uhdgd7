@@ -17,9 +17,9 @@
     </div>
    <div class="center-container">
       <img src="glueylayoutpr.png" width="100px" height="30px" class="glueylayout">
-      <a href="index.html" style="text-align: right" class="home">Home</a>
-      <a href="about-us" style="text-align: right" class="about">About</a>
-      <a href="contact" style="text-align: right" class="contact">Contact</a>
+      <a href="index.html" style=text-align:right"; class="home">Home</a>
+      <a href="about-us" style="text-align: right"; class="about">About</a>
+      <a href="contact" style="text-align: right;" class="contact">Contact</a>
       <a href="forum" style="text-align: right" class="forum">Forum</a>
       
    </div>
@@ -34,8 +34,14 @@
    
 
 
-   
-      <script src="script.js"></script>
+   <script type="text/javascript">
+      // cambiare id di tutti i bottoni in btn e poi su getElemntById cambiare l'id con "btn" così il sound va per tutti i bottoni
+      document.getElementById('accept-cookies').addEventListener('click', function() {
+         const audio = new Audio('/Sounds/sfx_click.wav'); 
+         audio.play();
+      });
+   </script>
+       <script src="script.js"></script>
 
 </body>
 </html>

@@ -17,11 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // cambiare id di tutti i bottoni in btn e poi su getElemntById cambiare l'id con "btn" così il sound va per tutti i bottoni
-  document.getElementById('accept-cookies').addEventListener('click', function() {
-    const audio = new Audio('/Sounds/sfx_click.wav'); 
-    audio.play();
- });
+
 
   //sono altamente skibidi!1111!!!
 
