@@ -193,11 +193,27 @@ a {
     color: black;
 }
 
+.languages { 
+  position: absolute;
+  right: 270px;
+  color: black;
+}
+
+.socials { 
+  position: absolute;
+  right: 330px;
+  color: black;
+}
+
 .home {
     position: absolute;
-    right: 270px;
+    right: 390px;
     color: black;
 }
+
+
+
+
 
 
 
