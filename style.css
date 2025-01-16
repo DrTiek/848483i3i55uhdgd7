@@ -5,215 +5,110 @@
   font-style: normal;
 }
 
-body {
-  animation: slide-up 1s ease-out forwards;
-  background-color: white;
-  font-family: Arial, sans-serif;
-}
+
 /*sono micheal jackson*/
 p, h1, h2, h3, h4, a{
   font-family: 'Inter ExtraBold', sans-serif;
 }
 
-h1 {
-  text-align: center;
-  color: black;
-  animation: slide-up 1s ease-out forwards;
-  font-size: 3em;
-}
-
-.button-games {
-    font-size: 16px; /* Dimensione del testo */
-
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px; /* Spazio interno al testo */
-    margin: 20px; /* Spazio esterno attorno al testo */
-    margin-left: 370px;
-    border: 2px solid transparent; /* Bordo iniziale invisibile */
-    border-radius: 5px; /* Angoli arrotondati */
-    background-color: #388E3C; /* Colore di sfondo iniziale */
-    color: #333; /* Colore del testo iniziale */
-    text-align: center; /* Allineamento del testo */
-    cursor: pointer; /* Cambia il cursore quando sopra il testo */
-    width: 100px;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transizione fluida */
-  }
-  
-  /* Stile al passaggio del mouse */
-  .button-games:hover {
-    transform: scale(1.1); /* Ingrandisce il testo del 10% */
-    background-color: #4CAF50; /* Colore di sfondo verde quando si passa sopra */
-    color: white; /* Colore del testo bianco quando si passa sopra */
-    border-color: #388E3C; /* Colore del bordo verde scuro quando si passa sopra */
-  }
-
-  .button-socials {
-    font-size: 16px; /* Dimensione del testo */
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px; /* Spazio interno al testo */
-    margin: 20px; /* Spazio esterno attorno al testo */
-    margin-left: 185px;
-    border: 2px solid transparent; /* Bordo iniziale invisibile */
-    border-radius: 5px; /* Angoli arrotondati */
-    background-color: #388E3C; /* Colore di sfondo iniziale */
-    color: #333; /* Colore del testo iniziale */
-    text-align: center; /* Allineamento del testo */
-    cursor: pointer; /* Cambia il cursore quando sopra il testo */
-    width: 100px;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transizione fluida */
-  }
-  
-  /* Stile al passaggio del mouse */
-  .button-socials:hover {
-    transform: scale(1.1); /* Ingrandisce il testo del 10% */
-    background-color: #4CAF50; /* Colore di sfondo verde quando si passa sopra */
-    color: white; /* Colore del testo bianco quando si passa sopra */
-    border-color: #388E3C; /* Colore del bordo verde scuro quando si passa sopra */
-  }
-
-  .center-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 0.48fr)); /* Due colonne automatiche che si adattano alla larghezza */
-    gap: 4px; /* Spazio tra i pulsanti */
-  }
-
-.center-image {
-    display: block; /* Imposta l'immagine come un elemento a blocco */
-    margin: 0 auto; /* Applica margini automatici a sinistra e a destra */
-  }
-
+/* Generali */
 body {
-    animation: slide-up 1s ease-out forwards;
-    background-color: white;
-    font-family: Arial, sans-serif;
-    
-}
-
-@keyframes slide-up {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .cookie-banner p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  .cookie-banner a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
-  .cookie-banner a:hover {
-    text-decoration: underline;
-  }
-  
-  .accept-button {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .accept-button:hover {
-    background-color: #45a049;
-  }
-
-.glueylayout {
-    
-    padding-right: 1810px;
-    background-color: rgb(31, 103, 211);
-    height: 19px;
-  
-}
-
-h2 {
-    text-align: center;
-}
-
-hr {
-    border-bottom-width: 0px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-top-color: rgb(0, 0, 0);
-    border-right-color: rgb(0, 0, 0);
-    border-bottom-color: rgb(0, 0, 0);
-    border-left-color: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    margin-left: auto;
-    margin-right: auto;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c2c2c; /* Grigio scuro che si abbina al logo nero */
+  color: #fff;
 }
 
 a {
-    text-decoration: none;
-    user-select: none; /* Disabilita la selezione del testo */
-    -webkit-user-select: none; /* Per browser WebKit (Safari, Chrome) */
-    -moz-user-select: none; /* Per Firefox */
-    -ms-user-select: none; /* Per Internet Explorer/Edge */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.contact {
-    position: absolute;
-    right: 136px;
-    color: black;
+a:hover {
+  color: #ff5722;
 }
 
-
-.forum {
-    color: black;
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f67d3;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.about {
-    position: absolute;
-    right: 210px;
-    color: black;
+.logo-container {
+  flex: 1;
 }
 
-.languages { 
-  position: absolute;
-  right: 270px;
-  color: black;
+.logo {
+  height: 30px;
 }
 
-.socials { 
-  position: absolute;
-  right: 390px;
-  color: black;
+.menu {
+  display: flex;
+  gap: 15px;
+  flex: 2;
+  justify-content: flex-end;
 }
 
-.home {
-    position: absolute;
-    right: 460px;
-    color: black;
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #2c2c2c; /* Grigio scuro */
+  color: #fff;
 }
 
+.center-image {
+  max-width: 80%;
+  max-height: 60%;
+  margin-bottom: 20px;
+}
 
+.game-info {
+  font-size: 1.2em;
+  text-align: center;
+  color: #fff;
+}
 
+/* Pulsante professionale */
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.cta-button:hover {
+  background-color: #e64a19;
+  transform: scale(1.05); /* Leggero ingrandimento */
+}
 
+.cta-button:active {
+  transform: scale(0.95); /* Leggero rimpicciolimento */
+}
 
-
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1f67d3;
+  color: white;
+}

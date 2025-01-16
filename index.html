@@ -1,43 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-   <title>Homepage - Gluey site</title>
-   <link href="style.css" rel="stylesheet">
-   <link href="Images/glueystudios.png" rel="icon" type="image/x-icon">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <audio id="background-music" src="Sounds/glueysite.mp3" autoplay loop></audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluey Studios</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div id="cookie-banner" class="cookie-banner">
-      <p>
-        Our website uses cookies to make your experience the best, also
-        <a href="privacy-policy.html" target="_blank">read our privacy policy</a>.
-        <button id="accept-cookies" class="accept-button">Accept</button>
-        
-      </p>
-    </div>
-   <div class="center-container">
-      <img src="Images/glueytitle.png" width="100px" height="30px" class="glueylayout">
-      <a href="index.html" style=text-align:right"; class="home">Home</a>
-      <a href="index.html" style=text-align:right"; class="socials">Socials</a>
-      <a href="index.html" style=text-align:right"; class="languages">Languages ▼</a>
-      <a href="about-us" style="text-align: right"; class="about">About</a>
-      <a href="contact" style="text-align: right;" class="contact">Contact</a>
-      <a href="forum" style="text-align: right" class="forum">Forum</a>
-      
-   </div>
-   
-   <h3 style="color: black; text-align: center;">Gluey is a fantastic studio that makes a lot of funny games to entertrain people more in the gaming community. Start playing gluey games and have fun! Also make sure to read our <a href="privacy-policy.html" target="_blank">privacy policy</a> for a better experience! Also, wanna listen to our relaxing music while visiting the website? Then <a href="index.html">click here</a> and have a good visit!</h3>
-   <hr width=”150px” size=”1″ color=”black” align=”center“ />
-   <h2 style="text-align: center;">GAMES</h2>
-   <h4 style="text-align: center;">Here we have all the current gluey available games</h4>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="Images/glueytitle.png" alt="Gluey Studios Logo" class="logo">
+        </div>
+        <nav class="menu">
+            <a href="#">Homepage</a>
+            <a href="#">Social Networks</a>
+            <a href="#" class="dropdown">Languages ▼</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Forum</a>
+        </nav>
+    </header>
 
-   
-   
+    <main>
+        <section class="hero">
+            <img src="Images/Exhalis.png" alt="Exhalis Game Logo" class="center-image">
+            <div class="game-info">
+                <p>Still in developing. Check the game page on GameJolt:</p>
+                <button class="cta-button" onclick="window.open('https://gamejolt.com/games/exhalis/955049', '_blank')">
+                    Click here!
+                </button>
+            </div>
+        </section>
+    </main>
 
+    <footer>
+        <p>© 2025 Gluey Studios. Tutti i diritti riservati.</p>
+    </footer>
 
-   
-   <script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
